@@ -1,5 +1,6 @@
 # Kidney-Disease-Classification
-
+This is an E2E project to demostrate Project Structuring, DVC Pipeline, Github Actions and CI/CD Pipeline. 
+Inspired by Bappy Ahmed and Krish Naik - YouTube video <<VIDEOLINK>>
 
 ## Workflows
 
