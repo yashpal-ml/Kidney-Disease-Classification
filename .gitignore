@@ -3,3 +3,5 @@
 src/cnnClassifier/__pycache__/
 __pycache__/
 /research/logs
+*.zip
+artifacts/*
