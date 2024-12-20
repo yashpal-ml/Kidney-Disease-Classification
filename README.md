@@ -14,3 +14,18 @@ Update the pipeline
 Update the main.py
 Update the dvc.yaml
 app.py
+
+
+## dagshub
+MLFLOW_TRACKING_URI = "https://dagshub.com/y.sharma.nagarajarao/Kidney-Disease-Classification.mlflow"
+MLFLOW_TRACKING_USERNAME = "y.sharma.nagarajarao"
+MLFLOW_TRACKING_PASSWORD = "c82315a0bbbc40a16b087fbee586c1099ca58004"
+python script.py
+
+
+## bash
+export MLFLOW_TRACKING_URI=https://dagshub.com/y.sharma.nagarajarao/Kidney-Disease-Classification.mlflow
+export MLFLOW_TRACKING_USERNAME=y.sharma.nagarajarao
+export MLFLOW_TRACKING_PASSWORD=c82315a0bbbc40a16b087fbee586c1099ca58004
+
+
