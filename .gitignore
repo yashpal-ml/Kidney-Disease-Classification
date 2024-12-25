@@ -5,6 +5,6 @@ __pycache__/
 /research/logs
 *.zip
 artifacts/*
-dvc.lock
+# dvc.lock
 mlruns/
 .dvc
