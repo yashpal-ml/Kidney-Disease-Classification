@@ -1,6 +1,6 @@
 from cnnClassifier.constants import *
-from cnnClassifier.utils.common import read_yaml, create_directories
-from cnnClassifier.entity.config_entity import DataIngestionConfig, PrepareBaseModelConfig, TrainingConfig
+from cnnClassifier.utils.common import read_yaml, create_directories, save_json
+from cnnClassifier.entity.config_entity import DataIngestionConfig, PrepareBaseModelConfig, TrainingConfig, EvaluationConfig
 import os
 
 class ConfigurationManager:
@@ -71,3 +71,15 @@ class ConfigurationManager:
         )
 
         return training_config
+    
+
+    def get_model_evaluation_config(self) -> EvaluationConfig:
+        eval_config = EvaluationConfig(
+            path_of_model = Path("artifacts\\training\\model.h5"),
+            training_data = Path("artifacts\\data_ingestion\\kidney-ct-scan-image"),
+            all_params = self.params,
+            mlflow_uri = "https://dagshub.com/y.sharma.nagarajarao/Kidney-Disease-Classification.mlflow",
+            params_image_size= self.params.IMAGE_SIZE,
+            params_batch_size = self.params.BATCH_SIZE
+        )
+        return eval_config
